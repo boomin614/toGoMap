@@ -1,0 +1,114 @@
+##, Toarco Toraja Map 全国版
+珈琲房,北海道北広島市栄町1-4-1　コープエルフィン1Ｆ,,1,42.9766806,141.5594574,011-376-8102,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_67
+喫茶　アップル,北海道江別市4条7,,1,43.1117524,141.5548979,011-383-3055,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_90
+デューク,北海道函館市本通2-40-14,,1,41.8003083,140.7709064,0138-32-7311,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_75
+日和茶房,北海道函館市元町32－10,,1,41.7652684,140.7115007,0138-83-6651,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_115
+軽食喫茶 グランピエ,北海道釧路郡釧路町曙2丁目11-10,,1,43.0151468,144.4085179,0154-37-7555,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_28
+まりーさんの木,北海道紋別市落石町5-36-12,,1,44.3599222,143.3348707,0158-23-1511,http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_86
+あきた角館　西宮家,秋田県仙北市角館町田町上丁11-1,,2,39.5929383,140.5648408,0187-52-2438,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_114
+異人館,秋田県秋田市八橋本町1-1-46,,2,39.722502,140.1005865,018-864-3590,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_99
+Caf?  de   蔵,岩手県花巻市湯本 1-125,,2,39.4516194,141.0696704,0198-37-2165,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/cafe_de
+カフェレストラン　ペニーレイン,宮城県柴田郡大河原町字新南60－41,,2,38.0534728,140.7307736,0224-53-2323,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_92
+カフェ　フロリ,宮城県仙台市青葉区中央1－9－33さくら野百貨店3F,,2,38.2613187,140.8799697,022-748-6350,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_91
+珈琲専科　道,山形県山形市鉄砲町3-1-63,,2,38.2356461,140.3278839,023-631-2483,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_35
+道の駅　しもごう,福島県南会津郡下郷町大字南倉沢字木賊844-188,,2,37.2035393,139.9163428,0241-67-3802,http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_102
+カフェ・アルコ　スタツィオーネ,石川県金沢市木ノ新保町1-1　金沢駅百番街くつろぎ館1F,,3,36.5800672,136.6490772,076-224-0141,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_34
+カフェ・アルコ メルカート,石川県金沢市青草町88番地　　近江町いちば館1F,,3,36.5715515,136.6560725,076-262-0141,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_32
+カフェド・アンティーム,富山県魚津市北鬼江2807,,3,36.8299061,137.4100811,0765-22-9768,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_44
+クロスティ,福井県越前市家久町37-1-2,,3,35.939855,136.1608879,0778-21-5440,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_43
+cafe dakkura,新潟県新潟市中央区西大畑町5191-9,,3,37.9284301,139.0417311,025-228-7720,http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_dakkura
+喫茶　海堂,新潟県新潟市東区松浜町3710　新潟空港ターミナルビル2F,,3,37.9524095,139.1132186,025-275-2638,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_85
+赤倉観光ホテル　カフェテラス,新潟県妙高市田切216,,3,36.8869279,138.1773954,0255-87-2501,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_73
+HATAGO 井仙　水屋,新潟県南魚沼郡湯沢町大字湯沢2455,,3,36.9355909,138.8082465,025-784-3361,http://www.keycoffee.co.jp/shopmap/toraja/chubu/hatago
+翁堂駅前2F喫茶室,長野県松本市深志1-2-3,,3,36.2309221,137.9662879,0263-35-0808,http://www.keycoffee.co.jp/shopmap/toraja/chubu/2f
+奈良井宿　深山,長野県塩尻市奈良井837-101,,3,35.9678674,137.8151809,0265-34-2500,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_110
+ザイデンシュトラーセン,長野県上田市中丸子1623-1,,3,36.3368754,138.2711315,0268-42-6673,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_101
+Cafe Bleu(カフェ  ブリュ),群馬県高崎市宮元町13丁目1番　スズラン高崎店内3Ｆ,,4,36.3230338,139.0051961,027-327-9991,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_113
+西洋料理 明治の館,栃木県日光市山内2339-1,,4,36.7571682,139.6023712,0288-53-3751,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_82
+Caf?　de ville,茨城県日立市幸町1-1-3-2,,4,36.5919104,140.6616605,0294-33-8897,http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafede_ville
+洋風笠間菓子 グリュイエール,茨城県笠間市下市毛285,,4,36.3739004,140.2463396,0296-72-6557,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_117
+エトアール,東京都杉並区西荻南3-11-12,,4,35.703148,139.5996216,03-3333-2702,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_121
+ラ・プレシューズ　アトレ四谷店,東京都新宿区四谷1-5-25　JR四谷駅ビル1F,,4,35.6902021,139.7164592,03-3356-6559,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_78
+カフェ　クレエル,東京都杉並区天沼3－30－2,,4,35.7062233,139.6224167,03-3392-2222,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_46
+KAWAMURA GATEAUX,東京都世田谷区梅が丘1-34-1,,4,35.6564348,139.6528581,03-3427-0888,http://www.keycoffee.co.jp/shopmap/toraja/kanto/kawamura_gateaux
+アワヤ洋菓子店,東京都品川区東大井5-3-10,,4,35.6074737,139.7353553,03-3471-9038,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_36
+レピドール ,東京都大田区田園調布3-24-14,,4,35.5970954,139.6664702,03-3722-0141,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_48
+Cafe処　TSUNASHIMA-EN,東京都大田区多摩川1-26-1,,4,35.5617818,139.7001501,03-3758-1341,http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafetsunashima-en
+東京湾シンフォニークルーズ,東京都港区海岸2-7-104,,4,35.6506886,139.7604738,03-3798-8101,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_87
+喫茶　ローヤル,東京都荒川区荒川3-61-5,,4,35.7332967,139.7792473,03-3801-2417,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_76
+珈琲の店　プチボア,東京都豊島区巣鴨4-26-3,,4,35.737317,139.7328395,03-3916-5681,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_116
+カフェテラス　CUSTOM,東京都練馬区光が丘 5-1-1 IMA　1F,,4,35.7599496,139.6281547,03-3976-1210,http://www.keycoffee.co.jp/shopmap/toraja/kanto/custom
+サンコーヒー,東京都多摩市関戸1-11-1京王聖蹟桜ヶ丘SC　A館3F,,4,35.6517886,139.450981,042-337-2529,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_45
+Cafe ルーブル,東京都立川市曙町2-9-2,,4,35.7009242,139.4158123,042-528-1130,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_58
+八王子エルシィ　ラウンジ Apple Eye,東京都八王子市八日町6-7,,4,35.660546,139.3290991,042-623-2111,http://www.keycoffee.co.jp/shopmap/toraja/kanto/1fapple_eye
+ホットケーキ倶楽部  珈琲茶房,千葉市緑区あすみが丘東2-20-3,,4,35.5249313,140.2790656,043-205-8188,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_123
+caf? de COT,千葉県佐倉市栄町19-5京成サンコーポ佐倉1F,,4,35.7243278,140.2291913,043-376-3286,http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafe_de_cot
+オンディーヌ,神奈川県横浜市中区桜木町1-1-8-2　県民共済プラザビル4F,,4,35.4531304,139.6309835,045-201-3950,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_57
+リアンサンドウィッチカフェ横浜店,神奈川県横浜市中区弁天通1-1,,4,35.4468769,139.6408364,045-222-7055,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_88
+横浜珈琲館,神奈川県横浜市保土ヶ谷区川辺町3-7,,4,35.4599909,139.5984207,045-348-7517,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_72
+新横浜グレイスホテル　ティーラウンジ　パレグレイス,神奈川県横浜市港北区新横浜3-6-15,,4,35.5089029,139.6185039,045-474-5111,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_104
+梅乃井珈琲,神奈川県横浜市港南区港南台3-1-3 バーズ3F,,4,35.3749114,139.5774985,045-832-0946,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_65
+ホテル グリーンプラザ箱根 ラウンジ ソレイユ,神奈川県足柄下郡箱根町仙石原1244-2,,4,35.2435385,139.0009761,0460-84-8611,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_79
+ベーカリー＆テーブル箱根　3Fレストラン,神奈川県足柄下郡箱根町元箱根字御殿9－1,,4,35.2014989,139.031512,0460-85-1530,http://www.keycoffee.co.jp/shopmap/toraja/kanto/3f
+葡露灯,神奈川県海老名市国分寺台2丁目10番19号,,4,35.4395441,139.4056271,046-232-316,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_125
+TEA ROOM 珈門,神奈川県横須賀市野比1-10-14,,4,35.2118013,139.6853857,046-849-7095,http://www.keycoffee.co.jp/shopmap/toraja/kanto/tea_room
+ルフラン新松戸店,千葉県松戸市新松戸1-489,,4,35.8262556,139.9202012,047-344-0158,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_70
+コーヒーハウス　Sanyo,千葉県船橋市前原西2-18-1津田沼パルコ2F,,4,35.6919236,140.0215726,0474-72-6150,http://www.keycoffee.co.jp/shopmap/toraja/kanto/sanyo
+kokoカフェ,埼玉県行田市駒形2-8-15,,4,36.1303552,139.4536712,048-552-1891,http://www.keycoffee.co.jp/shopmap/toraja/kanto/assorto_1
+カフェ　ログハット,埼玉県春日部市増田新田15-2,,4,35.9496211,139.7494461,048-738-6292,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_50
+カフェレストラン　しらかば,埼玉県さいたま市緑区中尾1317-11　2Ｆ,,4,35.8768472,139.685417,048-810-4070,http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_97
+VINE CAFE,埼玉県さいたま市南区南浦和2-39-2,,4,35.8477254,139.6702276,048-816-4499,http://www.keycoffee.co.jp/shopmap/toraja/kanto/vine_cafe
+ケーキ・カフェレストラン　ポプリ,静岡県島田市大津通4-3,,5,34.8352609,138.1776714,0547-36-7771,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_84
+CAFE HEART,愛知県名古屋市中村区八社1-200,,5,35.1520428,136.8395999,052-411-1182,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_107
+Mistral,愛知県あま市篠田長堀7,,5,35.1831656,136.7865096,052-449-1830,http://www.keycoffee.co.jp/shopmap/toraja/chubu/mistral_1
+パティスリー　モンパル,愛知県名古屋市中村区大門町20-3,,5,35.1705188,136.864663,052-461-7100,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_51
+カフェ ジャンシアーヌ JR名古屋駅店,愛知県名古屋市中村区名駅1-1-4　名古屋中央通り,,5,35.1698058,136.8886609,052-533-6001,http://www.keycoffee.co.jp/shopmap/toraja/chubu/_jr
+珈琲　三ツ屋,愛知県東海市名和町後酉91-1,,5,35.0633888,136.9228015,052-601-1560,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_54
+チェリーみなと店,愛知県名古屋市港区港明2-4-1,,5,35.1084194,136.8846002,052-653-8302,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_108
+カフェ・ド・フレーズ,愛知県名古屋市千種区茶屋が坂1-21-15,,5,35.185126,136.9619929,052-723-1300,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_52
+カフェChie,愛知県豊橋市青竹町字八間西180-1,,5,34.7598185,137.3457506,0532-31-0198,http://www.keycoffee.co.jp/shopmap/toraja/chubu/chie
+カフェレスト　ロダン朝倉店,愛知県知多市朝倉町292,,5,34.9897952,136.8677831,0562－33－0311,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_98
+CAFE POLO21,愛知県知多市寺本新町1-114,,5,34.995442,136.8768039,0562-33-7273,http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_polo21
+コーヒーラウンジ　ルポー,愛知県岡崎市康生町515番地33 岡崎ニューグランドホテル1F,,5,34.9558348,137.1612695,0564-21-5111,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_60
+珈琲＆ケーキ　ビバリーヒルズ,愛知県岡崎市羽根町大池159-1 ,,5,34.9210732,137.1722724,0564-54-1955 ,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_42
+喫茶　ゴールド,愛知県弥富市平島町五反割85-4,,5,35.1099078,136.7424433,0567-65-3575,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_109
+COFFEE HOUSE カフェロード,愛知県北名古屋市鹿田坂巻135,,5,35.2559725,136.8760148,0568-22-3321,http://www.keycoffee.co.jp/shopmap/toraja/chubu/coffee_house
+珈琲 やさか,愛知県小牧市田県町92　YASAKAビル1F,,5,35.3153081,136.9399672,0568-73-4335,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_5
+カフェ　ピノ,愛知県春日井市六軒屋町東丘22　ザ・モール春日井内3F,,5,35.2558684,136.9770867,0568-84-4730,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_53
+カフェテラス　ロダン青山店,愛知県半田市青山3-26-9,,5,34.8759513,136.9136056,0569-23-6031,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_96
+caf? sora,愛知県一宮市音羽2-9-30,,5,35.3095503,136.795353,0586-71-1881,http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_sora
+Cafe teria KITRI（カフェテリア　キトリ）,愛知県名古屋市緑区大将ケ根1-2602,,5,35.0633468,136.9835469,070-5567-8688,http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafeteriakitri
+カフェ ダイニング アッシュ,岐阜県関市稲口250-1,,5,35.4709325,136.9145735,0575-36-4192,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_81
+さくら珈琲　岩地店,岐阜県岐阜市岩地2-3-2,,5,35.4075563,136.8065439,058-240-3330,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_55
+さくら珈琲　鏡島店,岐阜県岐阜市西荘3-1-12,,5,35.4123883,136.7277336,058-252-4566,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_68
+珈琲館　櫟（クヌギ）,岐阜県本巣市福島字川西336-1,,5,35.4830469,136.6787656,058-323-6789,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_119
+サンローヤル,岐阜県揖斐郡池田町本郷1368-4,,5,35.4444029,136.5712232,0585-45-2876,http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_69
+カップジュビー,三重県伊勢市宇治今在家町30-2,,5,34.4610207,136.7235072,0596-23-8560,http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_41
+ブルームズベリ,大阪府豊中市新千里東町1-5-2 千里セルシー1F,,6,34.8085238,135.4958812,06-6832-8905,http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_38
+ラリー,大阪府寝屋川市東大利町12-26,,6,34.7637042,135.6178591,072-827-3046,http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_59
+喫茶　ロン,大阪府枚方市岡東町12-3-3-310 サンプラザビル3F,,6,34.6937378,135.5021651,072-844-0709 　,http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_66
+Greiner's ACTA東館店,兵庫県西宮市北口町1-2-220,,6,34.7472874,135.3583546,079-869-0970,http://www.keycoffee.co.jp/shopmap/toraja/kansai/greiners_acta
+珈琲専門店　パルレ,山口県下関市竹崎町4-4-8　シーモール専門店街　味の四番街,,7,33.9527866,130.9245327,083-234-3841,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_56
+HOT・POINT,山口県宇部市恩田町1-3-6,,7,33.9465679,131.265932,0836-32-9108,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/hotpoint
+爽健美食 心菜　上乃木店　,島根県松江市上乃木7-12-64,,7,35.4453848,133.0671715,0852-23-9100,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_61
+緑と音の館　爽健美食 心菜　西津田店,島根県松江市西津田10-13-27,,7,35.4546146,133.0814256,0852-33-7073,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_62
+ティールーム　ロダン,岡山県岡山市北区柳町2-6-25　朝日生命ビル1F,,7,34.6574853,133.9197185,086-233-9351,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_39
+西市珈琲舎,岡山県岡山市南区西市301-1,,7,34.634828,133.9009713,086-242-2400,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_37
+‐熟成肉‐　武田屋,岡山県倉敷市新田2162－3,,7,34.5837302,133.7840751,086-428-7800,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_71
+名物かまど総本店,香川県坂出市江尻町1247,,7,34.3163722,133.8735872,0877-46-6600,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_118
+JRホテルクレメント高松　フォンティーヌ,香川県高松市浜ノ町1-1,,7,34.3520094,134.048421,087-811-1111,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/jr
+ライフタイム,高知県高知市横内314,,7,33.5664767,133.502035,088-872-5125,http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_103
+銀のすぷーん　久留米本店,福岡県久留米市諏訪野町2721,,8,33.3148871,130.5275299,0120-86-8839,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_49
+ホテルクリオコート博多　カフェド　エルテ,福岡県福岡市博多区博多駅中央街5番3号,,8,33.5897051,130.4219917,092-472-1111,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_89
+ティールーム　たかはし,福岡県福岡市博多区千代1-17-1,,8,33.6023482,130.414617,092-632-0160,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_111
+すいげつ,福岡県北九州市門司区元清滝町5-22,,8,33.9385388,130.9614877,093-331-2631,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_112
+萃香園ホテル ティーラウンジ,福岡県久留米市櫛原町87,,8,33.3209142,130.5141063,0942-35-5351,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_83
+OHARA,福岡県大牟田市泉町2-6,,8,33.0349285,130.4498655,0944-52-1101,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/ohara
+ウォールデン,福岡県朝倉市甘木423-4,,8,33.4085718,130.6536133,0946-24-8844,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_120
+唐津シーサイドホテル  LOUNGE CASTLE,佐賀県唐津市東唐津4-182,,8,33.4484827,129.9901405,0955-75-3300,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/loungecastle
+カロム・カフェ,長崎県長崎市浜町9-8　カロムビル1F,,8,32.7436557,129.8789393,095-820-5240,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_63
+喫茶らんぶる,長崎県南松浦郡新上五島町有川郷大橋2716,,8,32.982502,129.112847,0959－42－2120,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_94
+喫茶　四季,熊本県熊本市中央区桜町3-22　県民百貨店8F,,8,32.799837,130.703736,096-322-1111,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_100
+マザーグース,熊本県熊本市中央区渡鹿7-8-53豊ビル1F,,8,32.8080017,130.7370626,096-372-8844,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_122
+珈琲　Brain　(コーヒー ブレーン）,宮崎県児湯郡高鍋町大字南高鍋7161-63,,8,32.1203937,131.4984806,0983-22-3996,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/brain_1
+宮崎観光ホテル　ティーラウンジひまわり,宮崎県宮崎市松山1-1-1,,8,31.9057768,131.4258323,0985-27-1212,http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_77
