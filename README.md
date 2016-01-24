@@ -18,4 +18,4 @@
 * to add the new place which we want to go to.
 * to download the place list via KML file format
 * to upload KML file via D&D
-*
+* to edit the information of the place point
