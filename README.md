@@ -1,9 +1,7 @@
 # toGoMap
+This application shows the map which you want to go to.
 
-<<<<<<< Updated upstream
-=======
-This appication shows the map which you want to go to.
-
+## what you can do
 
 
->>>>>>> Stashed changes
+## what you have to do
