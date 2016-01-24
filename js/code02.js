@@ -209,15 +209,9 @@ function makeHtml(plotData) {
 
   tmpStr += plotData.address + '<br>';
   tmpStr += '<input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">';
-<<<<<<< HEAD
   tmpStr += '&nbsp;&nbsp;';
   tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">';
   tmpStr += '&nbsp;&nbsp;';
-=======
-  tmpStr += '&nbsp;&nbsp;&nbsp;';
-  tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">';
-  tmpStr += '&nbsp;&nbsp;&nbsp;';
->>>>>>> master
   tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">';
   tmpStr += '</small>';
 
@@ -240,11 +234,7 @@ function addListenerPoint(m_marker, m_content) {
     }
 
     infoWindow = new google.maps.InfoWindow({
-<<<<<<< HEAD
-      maxWidth : 320, // 情報ウィンドウの最大幅をピクセルで設定
-=======
       maxWidth : 300, // 情報ウィンドウの最大幅をピクセルで設定
->>>>>>> master
       content : m_content
     });
 
