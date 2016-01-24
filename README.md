@@ -12,4 +12,5 @@
 
 ## todo
 
-* we can add the new place which we want to go to.
+* to add the new place which we want to go to.
+* to download the place list via KML file format
