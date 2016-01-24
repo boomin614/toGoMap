@@ -1,0 +1,29 @@
+div.red {
+	color: #ff0000;
+}
+
+div.ul {
+	text-decoration: underline;
+}
+
+div.l-pad {
+	padding-left: 5px;
+}
+
+div.b {
+	font-weight: bold;
+}
+
+div.surrounding {
+	padding: 10px;
+	border: 2px #000000 solid;
+}
+
+div.top {
+	padding: 100px 0px 0px 0px;
+}
+
+.titleStr {
+	bold;
+	color: #fff;
+}
