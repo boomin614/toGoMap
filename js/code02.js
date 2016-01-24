@@ -209,9 +209,9 @@ function makeHtml(plotData) {
 
   tmpStr += plotData.address + '<br>';
   tmpStr += '<input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">';
-  tmpStr += '&nbsp;&nbsp;&nbsp;';
+  tmpStr += '&nbsp;&nbsp;';
   tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">';
-  tmpStr += '&nbsp;&nbsp;&nbsp;';
+  tmpStr += '&nbsp;&nbsp;';
   tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">';
   tmpStr += '</small>';
 
