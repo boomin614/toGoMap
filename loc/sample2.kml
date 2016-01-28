@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Data+BalloonStyle</name>
+  <Style id="golf-balloon-style">
+    <BalloonStyle>
+      <text>
+        <![CDATA[
+        <div style="margin:5px;">
+          <a href="$[url]" target="_blank">$[name]</a>
+        </div>
+        <small>$[tel]<br>$[address]<br>
+          <input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">
+          &nbsp;&nbsp;
+          <input type="button" id="$[id]" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">
+          &nbsp;&nbsp;
+          <input type="button" id="$[id]" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">
+        </small>
+        ]]>
+      </text>
+    </BalloonStyle>
+  </Style>
+  <!-- Shared style sample Two Placemarks use the same balloon template -->
+  <Placemark>
+    <name>オンディーヌ</name>
+    <styleUrl>#golf-balloon-style</styleUrl>
+    <ExtendedData>
+      <Data name="id">
+        <value>44</value>
+      </Data>
+      <Data name="tel">
+        <value>045-201-3950</value>
+      </Data>
+      <Data name="url">
+        <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_57</value>
+      </Data>
+      <Data name="address">
+        <value>神奈川県横浜市中区桜木町1-1-8-2　県民共済プラザビル4F</value>
+      </Data>
+    </ExtendedData>
+    <Point>
+      <coordinates>139.6309835,35.4531304</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>リアンサンドウィッチカフェ横浜店</name>
+    <styleUrl>#golf-balloon-style</styleUrl>
+    <ExtendedData>
+      <Data name="id">
+        <value>45</value>
+      </Data>
+      <Data name="tel">
+        <value>045-222-7055</value>
+      </Data>
+      <Data name="url">
+        <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_88</value>
+      </Data>
+      <Data name="address">
+        <value>神奈川県横浜市中区弁天通1-1</value>
+      </Data>
+    </ExtendedData>
+    <Point>
+      <coordinates>139.6408364,35.4468769</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
