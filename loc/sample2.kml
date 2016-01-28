@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Data+BalloonStyle</name>
+  <Style id="golf-balloon-style">
+    <BalloonStyle>
+      <text>
+        <![CDATA[
+        name is $[name]
+        tel $[tel]
+        URL $[url]
+        <i>$[address]</i>
+        ]]>
+      </text>
+    </BalloonStyle>
+  </Style>
+  <!-- Shared style sample Two Placemarks use the same balloon template -->
+  <Placemark>
+    <name>オンディーヌ</name>
+    <styleUrl>#golf-balloon-style</styleUrl>
+    <ExtendedData>
+      <Data name="tel">
+        <value>1</value>
+      </Data>
+      <Data name="url">
+        <value>234</value>
+      </Data>
+      <Data name="address">
+        <value>4</value>
+      </Data>
+    </ExtendedData>
+    <Point>
+      <coordinates>139.6309835,35.4531304</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>リアンサンドウィッチカフェ横浜店</name>
+    <styleUrl>#golf-balloon-style</styleUrl>
+    <ExtendedData>
+      <Data name="tel">
+        <value>045-222-7055</value>
+      </Data>
+      <Data name="url">
+        <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_88</value>
+      </Data>
+      <Data name="address">
+        <value>神奈川県横浜市中区弁天通1-1</value>
+      </Data>
+    </ExtendedData>
+    <Point>
+      <coordinates>139.6408364,35.4468769</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
