@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
   <meta NAME="DESCRIPTION" CONTENT="yasaito">
 
-  <title>Toarco Toraja Map 全国版</title>
+  <title id="pagetitle">Map Title</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- link rel="stylesheet"
   href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-resposive.min.css" -->
@@ -14,26 +14,6 @@
   <link rel="stylesheet" type="text/css" href="./css/layout.css">
   <link rel="stylesheet" type="text/css" href="./css/format.css">
   <link rel="stylesheet" type="text/css" href="./css/menu-style.css">
-  <!-- jQuery -->
-  <!--[if lt IE 9]-->
-  <script src="./js/html5shiv.js"></script>
-  <script src="./js/respond.min.js"></script>
-  <!--[endif]-->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/jquery_after.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="./js/bootstrap.min.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true" charset="utf-8"></script>
-  <!-- global変数の定義 -->
-  <script src="./js/code01.js" type="text/javascript"></script>
-  <!-- 基本的なgooglemapの描画定義 -->
-  <script src="./js/code02.js" type="text/javascript"></script>
-  <!-- 位置情報取得 -->
-  <script src="./js/code03.js" type="text/javascript"></script>
-  <!-- ルート検索 -->
-  <script src="./js/code04.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -49,7 +29,7 @@
           <span class="icon-bar"></span>
         </button>
         <!-- タイトル部分：ここは読み込んだマップ定義ファイルから取得した文字列を表示させたい -->
-        <div class="navbar-brand titleStr" id="mobile-bar">Toarco Toraja Map</div>
+        <div class="navbar-brand titleStr" id="maptitle">Map Title</div>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,8 +55,8 @@
           </li>
           <li>
             <div class="form-group navbar-form navbar-left">
-              <input type="text" id="journey" class="form-control value" value="" size="5" placeholder="距離">
-              <input type="text" id="duration" class="form-control value" value="" size="6" placeholder="時間">
+              <input type="text" id="journey" class="form-control value col-xs-1" value="" size="5" placeholder="距離">
+              <input type="text" id="duration" class="form-control value col-xs-1" value="" size="6" placeholder="時間">
             </div>
             <button class="btn btn-default navbar-btn" onclick="get_location()">現在地へ戻る</button>
           </li>
@@ -87,5 +67,31 @@
     <!-- /.container-fluid -->
   </nav>
   <div id="map-canvas">Now Loading...</div>
+
+  <!-- jQuery -->
+  <!--[if lt IE 9]-->
+  <!-- <script src="./js/html5shiv.js"></script>
+  <script src="./js/respond.min.js"></script> -->
+  <!--[endif]-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery_after.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="./js/ie10-viewport-bug-workaround.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" charset="utf-8"></script>
+  <!-- global変数の定義 -->
+  <script src="./js/code01.js" type="text/javascript"></script>
+  <!-- 基本的なgooglemapの描画定義 -->
+  <script src="./js/code02.js" type="text/javascript"></script>
+  <!-- 位置情報取得 -->
+  <script src="./js/code03.js" type="text/javascript"></script>
+  <!-- ルート検索 -->
+  <script src="./js/code04.js" type="text/javascript"></script>
+  <!-- File API関連 -->
+  <script src="./js/fileOp.js" type="text/javascript"></script>
+
 </body>
 </html>

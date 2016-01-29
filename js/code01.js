@@ -10,8 +10,8 @@ var map;
 var datalist = [];
 // 最後に開いた情報ウィンドウを記憶
 var infoWindow;
-// 外部データファイルのパス
-var filePath = "./loc/toraja00.json";
+// kmlファイルのパス
+var kmlFilePath = "./loc/toraja.kml";
 // 地図の初期中心位置
 var iniLatlng = new google.maps.LatLng(35.454954, 139.631386);
 // 地図の初期中心位置

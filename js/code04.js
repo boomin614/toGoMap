@@ -27,7 +27,7 @@ function setMyTravelMode(clicked_id) {
 		myTravelMode = google.maps.DirectionsTravelMode.WALKING;
 		break;
 	}
-		console.log("myTravelMode is changed: ", myTravelMode);
+	// console.log("myTravelMode is changed: ", myTravelMode);
 
 	if(goLatlng){
 		calcRoute();
