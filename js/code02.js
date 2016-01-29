@@ -97,7 +97,7 @@ function plotPlaceMark(map){
           id        : id,                // ID
           name      : placeMark.find("name").text(),       // 名称
           address   : placeMark.find("address").text(),    // 住所
-          position  : new google.maps.LatLng(pos[0], pos[1]), // 緯度経度
+          position  : new google.maps.LatLng(pos[1], pos[0]), // 経度,緯度で定義
           tel       : placeMark.find("phoneNumber").text(),// 電話番号
           url       : "",                                  // url
           category  : "",                                  // カテゴリ
