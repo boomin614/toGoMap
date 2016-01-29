@@ -66,7 +66,7 @@ function errorCallback(error) {
 	// message = "位置情報取得が不許可";
 
 	console.log("errorCallback: ", +"(" + error.code + "): " + error.message);
-	alert('ERROR(' + error.code + '): ' + error.message);
+	// alert('ERROR(' + error.code + '): ' + error.message);
 
 	// 現在位置情報へマーカーを描画
 	myPosMarkerDrop();
@@ -127,5 +127,3 @@ function stopWatchPosition() {
 // // タイマーを終了する
 // clearInterval(timerID);
 // }
-
-

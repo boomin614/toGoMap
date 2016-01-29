@@ -1,0 +1,2172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name><![CDATA[Toarco Toraja Map]]></name>
+    <Style id="golf-balloon-style">
+      <BalloonStyle>
+        <text>
+          <![CDATA[
+          <div style="margin:5px;">
+            <a href="$[url]" target="_blank">$[name]</a>
+          </div>
+          <small>$[tel]<br>$[address]<br>
+            <input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">
+            &nbsp;&nbsp;
+            <input type="button" id="$[id]" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">
+            &nbsp;&nbsp;
+            <input type="button" id="$[id]" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">
+          </small>
+          ]]>
+        </text>
+      </BalloonStyle>
+    </Style>
+        <!-- Shared style sample Two Placemarks use the same balloon template -->
+        <Placemark>
+          <name>珈琲房</name>
+          <address>北海道北広島市栄町1-4-1　コープエルフィン1Ｆ</address>
+          <phoneNumber>011-376-8102</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_67</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>42.9766806,141.5594574,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　アップル</name>
+          <address>北海道江別市4条7</address>
+          <phoneNumber>011-383-3055</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_90</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>43.1117524,141.5548979,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>デューク</name>
+          <address>北海道函館市本通2-40-14</address>
+          <phoneNumber>0138-32-7311</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_75</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>41.8003083,140.7709064,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>日和茶房</name>
+          <address>北海道函館市元町32-10</address>
+          <phoneNumber>0138-83-6651</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_115</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>41.7652684,140.7115007,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>軽食喫茶 グランピエ</name>
+          <address>北海道釧路郡釧路町曙2丁目11-10</address>
+          <phoneNumber>0154-37-7555</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_28</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>43.0151468,144.4085179,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>まりーさんの木</name>
+          <address>北海道紋別市落石町5-36-12</address>
+          <phoneNumber>0158-23-1511</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/hokkaido/post_86</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>44.3599222,143.3348707,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>あきた角館　西宮家</name>
+          <address>秋田県仙北市角館町田町上丁11-1</address>
+          <phoneNumber>0187-52-2438</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_114</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>39.5929383,140.5648408,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>異人館</name>
+          <address>秋田県秋田市八橋本町1-1-46</address>
+          <phoneNumber>018-864-3590</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_99</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>39.722502,140.1005865,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Caf?  de   蔵</name>
+          <address>岩手県花巻市湯本 1-125</address>
+          <phoneNumber>0198-37-2165</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/cafe_de</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>39.4516194,141.0696704,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェレストラン　ペニーレイン</name>
+          <address>宮城県柴田郡大河原町字新南60-41</address>
+          <phoneNumber>0224-53-2323</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_92</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>38.0534728,140.7307736,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ　フロリ</name>
+          <address>宮城県仙台市青葉区中央1-9-33さくら野百貨店3F</address>
+          <phoneNumber>022-748-6350</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_91</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>38.2613187,140.8799697,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲専科　道</name>
+          <address>山形県山形市鉄砲町3-1-63</address>
+          <phoneNumber>023-631-2483</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_35</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>38.2356461,140.3278839,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>道の駅　しもごう</name>
+          <address>福島県南会津郡下郷町大字南倉沢字木賊844-188</address>
+          <phoneNumber>0241-67-3802</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/tohoku/post_102</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>37.2035393,139.9163428,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ・アルコ　スタツィオーネ</name>
+          <address>石川県金沢市木ノ新保町1-1　金沢駅百番街くつろぎ館1F</address>
+          <phoneNumber>076-224-0141</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_34</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.5800672,136.6490772,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ・アルコ メルカート</name>
+          <address>石川県金沢市青草町88番地　　近江町いちば館1F</address>
+          <phoneNumber>076-262-0141</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_32</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.5715515,136.6560725,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェド・アンティーム</name>
+          <address>富山県魚津市北鬼江2807</address>
+          <phoneNumber>0765-22-9768</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_44</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.8299061,137.4100811,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>クロスティ</name>
+          <address>福井県越前市家久町37-1-2</address>
+          <phoneNumber>0778-21-5440</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_43</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.939855,136.1608879,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>cafe dakkura</name>
+          <address>新潟県新潟市中央区西大畑町5191-9</address>
+          <phoneNumber>025-228-7720</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_dakkura</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>37.9284301,139.0417311,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　海堂</name>
+          <address>新潟県新潟市東区松浜町3710　新潟空港ターミナルビル2F</address>
+          <phoneNumber>025-275-2638</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_85</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>37.9524095,139.1132186,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>赤倉観光ホテル　カフェテラス</name>
+          <address>新潟県妙高市田切216</address>
+          <phoneNumber>0255-87-2501</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_73</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.8869279,138.1773954,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>HATAGO 井仙　水屋</name>
+          <address>新潟県南魚沼郡湯沢町大字湯沢2455</address>
+          <phoneNumber>025-784-3361</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/hatago</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.9355909,138.8082465,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>翁堂駅前2F喫茶室</name>
+          <address>長野県松本市深志1-2-3</address>
+          <phoneNumber>0263-35-0808</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/2f</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.2309221,137.9662879,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>奈良井宿　深山</name>
+          <address>長野県塩尻市奈良井837-101</address>
+          <phoneNumber>0265-34-2500</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_110</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.9678674,137.8151809,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ザイデンシュトラーセン</name>
+          <address>長野県上田市中丸子1623-1</address>
+          <phoneNumber>0268-42-6673</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_101</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.3368754,138.2711315,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Cafe Bleu(カフェ  ブリュ)</name>
+          <address>群馬県高崎市宮元町13丁目1番　スズラン高崎店内3Ｆ</address>
+          <phoneNumber>027-327-9991</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_113</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.3230338,139.0051961,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>西洋料理 明治の館</name>
+          <address>栃木県日光市山内2339-1</address>
+          <phoneNumber>0288-53-3751</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_82</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.7571682,139.6023712,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Caf?　de ville</name>
+          <address>茨城県日立市幸町1-1-3-2</address>
+          <phoneNumber>0294-33-8897</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafede_ville</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.5919104,140.6616605,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>洋風笠間菓子 グリュイエール</name>
+          <address>茨城県笠間市下市毛285</address>
+          <phoneNumber>0296-72-6557</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_117</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.3739004,140.2463396,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>エトアール</name>
+          <address>東京都杉並区西荻南3-11-12</address>
+          <phoneNumber>03-3333-2702</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_121</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.703148,139.5996216,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ラ・プレシューズ　アトレ四谷店</name>
+          <address>東京都新宿区四谷1-5-25　JR四谷駅ビル1F</address>
+          <phoneNumber>03-3356-6559</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_78</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6902021,139.7164592,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ　クレエル</name>
+          <address>東京都杉並区天沼3-30-2</address>
+          <phoneNumber>03-3392-2222</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_46</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.7062233,139.6224167,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>KAWAMURA GATEAUX</name>
+          <address>東京都世田谷区梅が丘1-34-1</address>
+          <phoneNumber>03-3427-0888</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/kawamura_gateaux</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6564348,139.6528581,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>アワヤ洋菓子店</name>
+          <address>東京都品川区東大井5-3-10</address>
+          <phoneNumber>03-3471-9038</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_36</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6074737,139.7353553,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>レピドール </name>
+          <address>東京都大田区田園調布3-24-14</address>
+          <phoneNumber>03-3722-0141</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_48</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.5970954,139.6664702,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Cafe処　TSUNASHIMA-EN</name>
+          <address>東京都大田区多摩川1-26-1</address>
+          <phoneNumber>03-3758-1341</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafetsunashima-en</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.5617818,139.7001501,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>東京湾シンフォニークルーズ</name>
+          <address>東京都港区海岸2-7-104</address>
+          <phoneNumber>03-3798-8101</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_87</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6506886,139.7604738,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　ローヤル</name>
+          <address>東京都荒川区荒川3-61-5</address>
+          <phoneNumber>03-3801-2417</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_76</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.7332967,139.7792473,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲の店　プチボア</name>
+          <address>東京都豊島区巣鴨4-26-3</address>
+          <phoneNumber>03-3916-5681</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_116</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.737317,139.7328395,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェテラス　CUSTOM</name>
+          <address>東京都練馬区光が丘 5-1-1 IMA　1F</address>
+          <phoneNumber>03-3976-1210</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/custom</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.7599496,139.6281547,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>サンコーヒー</name>
+          <address>東京都多摩市関戸1-11-1京王聖蹟桜ヶ丘SC　A館3F</address>
+          <phoneNumber>042-337-2529</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_45</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6517886,139.450981,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Cafe ルーブル</name>
+          <address>東京都立川市曙町2-9-2</address>
+          <phoneNumber>042-528-1130</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_58</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.7009242,139.4158123,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>八王子エルシィ　ラウンジ Apple Eye</name>
+          <address>東京都八王子市八日町6-7</address>
+          <phoneNumber>042-623-2111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/1fapple_eye</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.660546,139.3290991,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ホットケーキ倶楽部  珈琲茶房</name>
+          <address>千葉市緑区あすみが丘東2-20-3</address>
+          <phoneNumber>043-205-8188</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_123</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.5249313,140.2790656,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>caf? de COT</name>
+          <address>千葉県佐倉市栄町19-5京成サンコーポ佐倉1F</address>
+          <phoneNumber>043-376-3286</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/cafe_de_cot</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.7243278,140.2291913,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>オンディーヌ</name>
+          <address>神奈川県横浜市中区桜木町1-1-8-2　県民共済プラザビル4F</address>
+          <phoneNumber>045-201-3950</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_57</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4531304,139.6309835,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>リアンサンドウィッチカフェ横浜店</name>
+          <address>神奈川県横浜市中区弁天通1-1</address>
+          <phoneNumber>045-222-7055</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_88</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4468769,139.6408364,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>横浜珈琲館</name>
+          <address>神奈川県横浜市保土ヶ谷区川辺町3-7</address>
+          <phoneNumber>045-348-7517</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_72</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4599909,139.5984207,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>新横浜グレイスホテル　ティーラウンジ　パレグレイス</name>
+          <address>神奈川県横浜市港北区新横浜3-6-15</address>
+          <phoneNumber>045-474-5111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_104</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.5089029,139.6185039,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>梅乃井珈琲</name>
+          <address>神奈川県横浜市港南区港南台3-1-3 バーズ3F</address>
+          <phoneNumber>045-832-0946</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_65</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.3749114,139.5774985,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ホテル グリーンプラザ箱根 ラウンジ ソレイユ</name>
+          <address>神奈川県足柄下郡箱根町仙石原1244-2</address>
+          <phoneNumber>0460-84-8611</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_79</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.2435385,139.0009761,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ベーカリー＆テーブル箱根　3Fレストラン</name>
+          <address>神奈川県足柄下郡箱根町元箱根字御殿9-1</address>
+          <phoneNumber>0460-85-1530</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/3f</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.2014989,139.031512,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>葡露灯</name>
+          <address>神奈川県海老名市国分寺台2丁目10番19号</address>
+          <phoneNumber>046-232-316</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_125</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4395441,139.4056271,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>TEA ROOM 珈門</name>
+          <address>神奈川県横須賀市野比1-10-14</address>
+          <phoneNumber>046-849-7095</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/tea_room</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.2118013,139.6853857,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ルフラン新松戸店</name>
+          <address>千葉県松戸市新松戸1-489</address>
+          <phoneNumber>047-344-0158</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_70</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.8262556,139.9202012,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>コーヒーハウス　Sanyo</name>
+          <address>千葉県船橋市前原西2-18-1津田沼パルコ2F</address>
+          <phoneNumber>0474-72-6150</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/sanyo</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.6919236,140.0215726,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>kokoカフェ</name>
+          <address>埼玉県行田市駒形2-8-15</address>
+          <phoneNumber>048-552-1891</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/assorto_1</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>36.1303552,139.4536712,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ　ログハット</name>
+          <address>埼玉県春日部市増田新田15-2</address>
+          <phoneNumber>048-738-6292</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_50</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.9496211,139.7494461,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェレストラン　しらかば</name>
+          <address>埼玉県さいたま市緑区中尾1317-11　2Ｆ</address>
+          <phoneNumber>048-810-4070</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/post_97</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.8768472,139.685417,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>VINE CAFE</name>
+          <address>埼玉県さいたま市南区南浦和2-39-2</address>
+          <phoneNumber>048-816-4499</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kanto/vine_cafe</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.8477254,139.6702276,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ケーキ・カフェレストラン　ポプリ</name>
+          <address>静岡県島田市大津通4-3</address>
+          <phoneNumber>0547-36-7771</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_84</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.8352609,138.1776714,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>CAFE HEART</name>
+          <address>愛知県名古屋市中村区八社1-200</address>
+          <phoneNumber>052-411-1182</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_107</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1520428,136.8395999,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Mistral</name>
+          <address>愛知県あま市篠田長堀7</address>
+          <phoneNumber>052-449-1830</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/mistral_1</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1831656,136.7865096,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>パティスリー　モンパル</name>
+          <address>愛知県名古屋市中村区大門町20-3</address>
+          <phoneNumber>052-461-7100</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_51</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1705188,136.864663,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ ジャンシアーヌ JR名古屋駅店</name>
+          <address>愛知県名古屋市中村区名駅1-1-4　名古屋中央通り</address>
+          <phoneNumber>052-533-6001</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/_jr</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1698058,136.8886609,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲　三ツ屋</name>
+          <address>愛知県東海市名和町後酉91-1</address>
+          <phoneNumber>052-601-1560</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_54</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.0633888,136.9228015,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>チェリーみなと店</name>
+          <address>愛知県名古屋市港区港明2-4-1</address>
+          <phoneNumber>052-653-8302</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_108</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1084194,136.8846002,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ・ド・フレーズ</name>
+          <address>愛知県名古屋市千種区茶屋が坂1-21-15</address>
+          <phoneNumber>052-723-1300</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_52</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.185126,136.9619929,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェChie</name>
+          <address>愛知県豊橋市青竹町字八間西180-1</address>
+          <phoneNumber>0532-31-0198</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/chie</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.7598185,137.3457506,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェレスト　ロダン朝倉店</name>
+          <address>愛知県知多市朝倉町292</address>
+          <phoneNumber>0562-33-0311</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_98</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.9897952,136.8677831,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>CAFE POLO21</name>
+          <address>愛知県知多市寺本新町1-114</address>
+          <phoneNumber>0562-33-7273</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_polo21</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.995442,136.8768039,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>コーヒーラウンジ　ルポー</name>
+          <address>愛知県岡崎市康生町515番地33 岡崎ニューグランドホテル1F</address>
+          <phoneNumber>0564-21-5111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_60</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.9558348,137.1612695,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲＆ケーキ　ビバリーヒルズ</name>
+          <address>愛知県岡崎市羽根町大池159-1 </address>
+          <phoneNumber>0564-54-1955 </phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_42</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.9210732,137.1722724,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　ゴールド</name>
+          <address>愛知県弥富市平島町五反割85-4</address>
+          <phoneNumber>0567-65-3575</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_109</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.1099078,136.7424433,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>COFFEE HOUSE カフェロード</name>
+          <address>愛知県北名古屋市鹿田坂巻135</address>
+          <phoneNumber>0568-22-3321</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/coffee_house</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.2559725,136.8760148,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲 やさか</name>
+          <address>愛知県小牧市田県町92　YASAKAビル1F</address>
+          <phoneNumber>0568-73-4335</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_5</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.3153081,136.9399672,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ　ピノ</name>
+          <address>愛知県春日井市六軒屋町東丘22　ザ・モール春日井内3F</address>
+          <phoneNumber>0568-84-4730</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_53</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.2558684,136.9770867,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェテラス　ロダン青山店</name>
+          <address>愛知県半田市青山3-26-9</address>
+          <phoneNumber>0569-23-6031</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_96</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.8759513,136.9136056,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>caf? sora</name>
+          <address>愛知県一宮市音羽2-9-30</address>
+          <phoneNumber>0586-71-1881</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafe_sora</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.3095503,136.795353,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Cafe teria KITRI（カフェテリア　キトリ）</name>
+          <address>愛知県名古屋市緑区大将ケ根1-2602</address>
+          <phoneNumber>070-5567-8688</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/cafeteriakitri</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.0633468,136.9835469,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カフェ ダイニング アッシュ</name>
+          <address>岐阜県関市稲口250-1</address>
+          <phoneNumber>0575-36-4192</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_81</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4709325,136.9145735,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>さくら珈琲　岩地店</name>
+          <address>岐阜県岐阜市岩地2-3-2</address>
+          <phoneNumber>058-240-3330</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_55</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4075563,136.8065439,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>さくら珈琲　鏡島店</name>
+          <address>岐阜県岐阜市西荘3-1-12</address>
+          <phoneNumber>058-252-4566</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_68</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4123883,136.7277336,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲館　櫟（クヌギ）</name>
+          <address>岐阜県本巣市福島字川西336-1</address>
+          <phoneNumber>058-323-6789</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_119</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4830469,136.6787656,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>サンローヤル</name>
+          <address>岐阜県揖斐郡池田町本郷1368-4</address>
+          <phoneNumber>0585-45-2876</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chubu/post_69</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4444029,136.5712232,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カップジュビー</name>
+          <address>三重県伊勢市宇治今在家町30-2</address>
+          <phoneNumber>0596-23-8560</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_41</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.4610207,136.7235072,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ブルームズベリ</name>
+          <address>大阪府豊中市新千里東町1-5-2 千里セルシー1F</address>
+          <phoneNumber>06-6832-8905</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_38</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.8085238,135.4958812,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ラリー</name>
+          <address>大阪府寝屋川市東大利町12-26</address>
+          <phoneNumber>072-827-3046</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_59</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.7637042,135.6178591,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　ロン</name>
+          <address>大阪府枚方市岡東町12-3-3-310 サンプラザビル3F</address>
+          <phoneNumber>072-844-0709 　</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kansai/post_66</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.6937378,135.5021651,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Greiner's ACTA東館店</name>
+          <address>兵庫県西宮市北口町1-2-220</address>
+          <phoneNumber>079-869-0970</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kansai/greiners_acta</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.7472874,135.3583546,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲専門店　パルレ</name>
+          <address>山口県下関市竹崎町4-4-8　シーモール専門店街　味の四番街</address>
+          <phoneNumber>083-234-3841</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_56</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.9527866,130.9245327,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>HOT・POINT</name>
+          <address>山口県宇部市恩田町1-3-6</address>
+          <phoneNumber>0836-32-9108</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/hotpoint</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.9465679,131.265932,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>爽健美食 心菜　上乃木店　</name>
+          <address>島根県松江市上乃木7-12-64</address>
+          <phoneNumber>0852-23-9100</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_61</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4453848,133.0671715,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>緑と音の館　爽健美食 心菜　西津田店</name>
+          <address>島根県松江市西津田10-13-27</address>
+          <phoneNumber>0852-33-7073</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_62</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>35.4546146,133.0814256,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ティールーム　ロダン</name>
+          <address>岡山県岡山市北区柳町2-6-25　朝日生命ビル1F</address>
+          <phoneNumber>086-233-9351</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_39</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.6574853,133.9197185,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>西市珈琲舎</name>
+          <address>岡山県岡山市南区西市301-1</address>
+          <phoneNumber>086-242-2400</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_37</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.634828,133.9009713,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>‐熟成肉‐　武田屋</name>
+          <address>岡山県倉敷市新田2162-3</address>
+          <phoneNumber>086-428-7800</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_71</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.5837302,133.7840751,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>名物かまど総本店</name>
+          <address>香川県坂出市江尻町1247</address>
+          <phoneNumber>0877-46-6600</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_118</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.3163722,133.8735872,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>JRホテルクレメント高松　フォンティーヌ</name>
+          <address>香川県高松市浜ノ町1-1</address>
+          <phoneNumber>087-811-1111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/jr</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>34.3520094,134.048421,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ライフタイム</name>
+          <address>高知県高知市横内314</address>
+          <phoneNumber>088-872-5125</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/chugoku/post_103</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.5664767,133.502035,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>銀のすぷーん　久留米本店</name>
+          <address>福岡県久留米市諏訪野町2721</address>
+          <phoneNumber>0120-86-8839</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_49</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.3148871,130.5275299,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ホテルクリオコート博多　カフェド　エルテ</name>
+          <address>福岡県福岡市博多区博多駅中央街5番3号</address>
+          <phoneNumber>092-472-1111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_89</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.5897051,130.4219917,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ティールーム　たかはし</name>
+          <address>福岡県福岡市博多区千代1-17-1</address>
+          <phoneNumber>092-632-0160</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_111</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.6023482,130.414617,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>すいげつ</name>
+          <address>福岡県北九州市門司区元清滝町5-22</address>
+          <phoneNumber>093-331-2631</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_112</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.9385388,130.9614877,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>萃香園ホテル ティーラウンジ</name>
+          <address>福岡県久留米市櫛原町87</address>
+          <phoneNumber>0942-35-5351</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_83</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.3209142,130.5141063,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>OHARA</name>
+          <address>福岡県大牟田市泉町2-6</address>
+          <phoneNumber>0944-52-1101</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/ohara</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.0349285,130.4498655,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>ウォールデン</name>
+          <address>福岡県朝倉市甘木423-4</address>
+          <phoneNumber>0946-24-8844</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_120</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.4085718,130.6536133,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>唐津シーサイドホテル  LOUNGE CASTLE</name>
+          <address>佐賀県唐津市東唐津4-182</address>
+          <phoneNumber>0955-75-3300</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/loungecastle</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>33.4484827,129.9901405,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>カロム・カフェ</name>
+          <address>長崎県長崎市浜町9-8　カロムビル1F</address>
+          <phoneNumber>095-820-5240</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_63</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>32.7436557,129.8789393,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶らんぶる</name>
+          <address>長崎県南松浦郡新上五島町有川郷大橋2716</address>
+          <phoneNumber>0959-42-2120</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_94</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>32.982502,129.112847,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>喫茶　四季</name>
+          <address>熊本県熊本市中央区桜町3-22　県民百貨店8F</address>
+          <phoneNumber>096-322-1111</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_100</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>32.799837,130.703736,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>マザーグース</name>
+          <address>熊本県熊本市中央区渡鹿7-8-53豊ビル1F</address>
+          <phoneNumber>096-372-8844</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_122</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>32.8080017,130.7370626,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>珈琲　Brain　(コーヒー ブレーン）</name>
+          <address>宮崎県児湯郡高鍋町大字南高鍋7161-63</address>
+          <phoneNumber>0983-22-3996</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/brain_1</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>32.1203937,131.4984806,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>宮崎観光ホテル　ティーラウンジひまわり</name>
+          <address>宮崎県宮崎市松山1-1-1</address>
+          <phoneNumber>0985-27-1212</phoneNumber>
+          <ExtendedData>
+            <Data name="url">
+              <value>http://www.keycoffee.co.jp/shopmap/toraja/kyushu/post_77</value>
+            </Data>
+            <Data name="category">
+              <value>0</value>
+            </Data>
+            <Data name="done">
+              <value>0</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>31.9057768,131.4258323,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+    </kml>

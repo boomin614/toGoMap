@@ -6,7 +6,6 @@
 *  →　チェックボックスでマーカ切り替え記載あり
 *
 */
-
 google.maps.event.addDomListener(window, 'load', initialize);
 var nowViewStatus = 2;
 
@@ -51,7 +50,9 @@ function initialize() {
   });
 
   // 表示データの読み込みと表示
-  LoadData();
+  // LoadData();
+  plotPlaceMark(map);
+
 
   // 位置情報の取得
   get_location();
@@ -59,46 +60,94 @@ function initialize() {
   // console.log("01: ", myLatlng);
 }
 
-/*
-* 外部ファイルからのデータ読み込み＆格納
-*
-*/
-function LoadData() {
 
-  $(document).ready(function () {
-    $.getJSON(filePath, function(data){
+function plotPlaceMark(map){
 
-      for(var i in data){
-        for( var j in data[i].list ) {
-          datalist[j] = {
-            // 本来は、データ中の値を取得してくるべき
-            id        : j,                          // ID
-            name      : data[i].list[j].name,       // 名称
-            address   : data[i].list[j].address,    // 住所
-            category  : data[i].list[j].category,   // カテゴリ
-            position  : new google.maps.LatLng(data[i].list[j].lon, data[i].list[j].lat), // 緯度経度
-            tel       : data[i].list[j].tel,        // 電話番号
-            url       : data[i].list[j].url,        // url
-            done      : data[i].list[j].done        // 0:まだ、1:もう行った
-          };
-          // console.log("datalist: ", datalist[j]);
+  // ここはjQueryを使ってのKMLデータ読み込み処理
+  $(function(){
+    $.get(kmlFilePath,function(kmlData){
+
+      // Map名称を取得してHTMLへ埋め込む
+      var title;
+      $(kmlData).find("name").each(function(idx, name){
+        var name = $(this);
+        if(idx==0){
+          // console.log("name1: ", name.text());
+          title = name.text();
         }
-      }
+      });
 
+      $("#pagetitle").html(title);
+      $("#maptitle").html(title);
+
+      $(kmlData).find("Placemark").each(function(idx, placeMark){
+        var placeMark = $(this);
+        var id = placeMark.attr("id");
+        // console.log("idx: ", idx);
+        // console.log("id: ", id);
+        // console.log("name: ", placeMark.find("name").text());
+        // console.log("address: ", placeMark.find("address").text());
+        // console.log("coordinates: ", placeMark.find("Point").find("coordinates").text());
+        // カンマ区切りの座標を分割して一時配列posへ格納
+        var pos = placeMark.find("Point").find("coordinates").text().split(",");
+        // console.log("coordinates: ", pos[0], pos[1]);
+        id=idx;
+
+        datalist[id] = {
+          id        : id,                // ID
+          name      : placeMark.find("name").text(),       // 名称
+          address   : placeMark.find("address").text(),    // 住所
+          position  : new google.maps.LatLng(pos[0], pos[1]), // 緯度経度
+          tel       : placeMark.find("phoneNumber").text(),// 電話番号
+          url       : "",                                  // url
+          category  : "",                                  // カテゴリ
+          done      : ""                                   // 0:まだ、1:もう行った
+        }
+
+        placeMark.find("Data").each(function(idx_0, Data){
+          var Data=$(this);
+          var tagName = Data.attr("name");
+          // console.log("url: ", tagName);
+
+          switch (tagName) {
+            case "url":
+            // console.log("url: ", Data.find("value").text());
+            datalist[id].url = Data.find("value").text();
+            break;
+            case "category":
+            // console.log("category: ", Data.find("value").text());
+            datalist[id].category = Data.find("value").text();
+            break;
+            case "done":
+            // console.log("done: ", Data.find("value").text());
+            datalist[id].done = parseInt(Data.find("value").text(), 10);
+            break;
+          }
+        });
+        // console.log("datalist: ", datalist[id]);
+      });
+    })
+    .success(function(json) {
+      console.log("kml読込成功");
+    })
+    .error(function(jqXHR, textStatus, errorThrown) {
+      console.log("kml読込エラー：" + textStatus);
+      console.log("kml読込エラー内容：" + jqXHR.responseText);
+    })
+    .complete(function() {
+      console.log("kml読込完了");
       replotTargetPins("all");
-
     });
   });
 }
-
 
 /*
 * プロットピンを再描画する。再描画対象は引数で受け取る。
 */
 function replotTargetPins(status) {
+  // global変数に格納
   nowViewStatus = status;
-
-  console.log("replotTargetPins: ", status);
+  // console.log("replotTargetPins: ", status);
 
   // まず最初に、全てのピンを消す
   removeMarkers();
@@ -117,19 +166,17 @@ function replotTargetPins(status) {
     break;
   }
 
+  // console.log("datalist.length: ", datalist.length);
   // ピンを全消去した後に、対象を再描画する
-  for (i = 0; i < datalist.length; i++) {
-
-    // plot対象の選択
-    if(datalist[i].done != digitStatus && digitStatus != 2 ){
+  for(id in datalist){
+    if(datalist[id].done != digitStatus && digitStatus != 2 ){
+      // plot対象の選択
       continue;
     }
-
+    // console.log("datalist[id]: ", datalist[id]);
     // 再描画と同時に、マーカーリストに追加
-    marker_list.push(drowPins(datalist[i]));
-
+    marker_list.push(drowPins(datalist[id]));
   }
-
 }
 
 /*
@@ -145,26 +192,26 @@ function removeMarkers() {
 /*
 * markerを描画する
 */
-function drowPins(plotData){
+function drowPins(palceMark){
   // プロットするアイコンの指定
-  var gicons = plotData.done != 0 ? plotPins.done : plotPins.notyet;
+  var gicons = palceMark.done != 0 ? plotPins.done : plotPins.notyet;
 
   // 個別マーカー設定
   var myMarker = new google.maps.Marker({
     icon : gicons,             // マーカーアイコンの設定
-    title : plotData.name,  // オンマウスで表示させる文字
-    position : plotData.position,
+    title : palceMark.name,  // オンマウスで表示させる文字
+    position : palceMark.position,
     animation: google.maps.Animation.DROP,
     map : map
   });
 
   // 情報ウィンドウへの表示内容作成
-  var infoWindowStr = makeHtml(plotData);
+  var infoWindowStr = makeHtml(palceMark);
+  // console.log("palceMark: ", palceMark);
+  // console.log("infoWindowStr: ", infoWindowStr);
 
   // リスナー定義の部分を別関数化
   addListenerPoint(myMarker, infoWindowStr);
-
-  // console.log("infoWindow: ", infoWindow);
 
   // 地図上クリックで情報ウィンドウを非表示
   google.maps.event.addListener(map, "click", function() {
@@ -184,37 +231,37 @@ function drowPins(plotData){
 /*
 * 情報ウィンドウの表示内容作成
 */
-function makeHtml(plotData) {
+function makeHtml(palceMark) {
 
   // console.log("04: ", i + ": " + datalist[i].content);
-
   var tmpStr = "";
-  var tmp = plotData.url;
+  var tmp = palceMark.url;
 
   // console.log("tmp: ", tmp + ": " + tmp);
 
-  if (plotData.url == null) {
-    tmpStr = '<div style="margin:5px;">' + plotData.name + '</div>';
+  if (palceMark.url == null) {
+    tmpStr = '<div style="margin:5px;">' + palceMark.name + '</div>';
   } else {
-    tmpStr = '<div style="margin:5px;"><a href="' + plotData.url + '" target="_blank">' + plotData.name + '</a></div>';
+    tmpStr = '<div style="margin:5px;"><a href="' + palceMark.url + '" target="_blank">' + palceMark.name + '</a></div>';
   }
 
   tmpStr += '<small>';
 
-  if (plotData.tel == null) {
+  if (palceMark.tel == null) {
     tmpStr += "電話番号不明" + '<br>';
   } else {
-    tmpStr += plotData.tel + '<br>';
+    tmpStr += palceMark.tel + '<br>';
   }
 
-  tmpStr += plotData.address + '<br>';
+  tmpStr += palceMark.address + '<br>';
   tmpStr += '<input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">';
   tmpStr += '&nbsp;&nbsp;';
-  tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">';
+  tmpStr += '<input type="button" id="'+ palceMark.id +'" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">';
   tmpStr += '&nbsp;&nbsp;';
-  tmpStr += '<input type="button" id="'+ plotData.id +'" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">';
+  tmpStr += '<input type="button" id="'+ palceMark.id +'" class="btn btn-primary btn-xs" value="やっぱまだ" onclick="alreadyDone(this.id,0)">';
   tmpStr += '</small>';
 
+  // console.log("infoWindow: ", tmpStr);
   return tmpStr;
 }
 
@@ -254,10 +301,10 @@ function addListenerPoint(m_marker, m_content) {
 /*
 * まだ行ってない、もうもう行った、を切り替える。
 */
-function alreadyDone(id,state){
-  console.log("alreadyDone: ", id);
+function alreadyDone(idx,state){
+  console.log("alreadyDone: ", idx);
   // console.log("data: ", datalist[id]);
-  datalist[id].done = state;
+  datalist[idx].done = state;
 
   replotTargetPins(nowViewStatus);
 }
