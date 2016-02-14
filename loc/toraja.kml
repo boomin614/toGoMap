@@ -10,7 +10,7 @@
           <div style="margin:5px;">
             <a href="$[url]" target="_blank">$[name]</a>
           </div>
-          <small>$[tel]<br>$[address]<br>
+          <small>$[phoneNumber]<br>$[address]<br>
             <input type="button" class="btn btn-danger btn-xs" value="ここに行く" onclick="calcRoute()">
             &nbsp;&nbsp;
             <input type="button" id="$[id]" class="btn btn-success btn-xs" value="もう行った" onclick="alreadyDone(this.id,1)">
