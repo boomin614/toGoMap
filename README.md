@@ -5,7 +5,7 @@
 * ルート検索の都合上、現在位置情報を使用します。この位置情報は、ブラウザ上とルート検索のための地図サービスサイト間でのみ使用されます。Webアプリが実行されている、Webサーバへ情報が送信されることはありません。
 
 # Let's try
-* [こちらからお試しください](http://boomin614.github.io/toGoMap/)
+* [こちらからお試しください](http://ec2-52-68-59-248.ap-northeast-1.compute.amazonaws.com/toGoMap/)
 
 
 # what you can do
